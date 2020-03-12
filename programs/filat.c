@@ -44,6 +44,7 @@ int main(int argc, char const *argv[]) {
     printf( (attributes.st_mode & S_IXOTH) ? "x" : "-");
     printf("\n");
     printf("inode-Number             : %ld\n",(long) attributes.st_ino);
+    printf("Device Numbers           : %ld\n", attributes.st_dev);
     printf("Link count               : %ld\n",(long) attributes.st_nlink);
     printf("UID                      : %ld\n",(long) attributes.st_uid);
     printf("GID                      : %ld\n",(long) attributes.st_gid);
